@@ -27,6 +27,7 @@
 		3179BF95264AB9AE006B2B17 /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF94264AB9AE006B2B17 /* MockSignupPresenter.swift */; };
 		3179BF98264ABA95006B2B17 /* NewsWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF97264ABA95006B2B17 /* NewsWebServiceTests.swift */; };
 		3179BF9A264ABBBE006B2B17 /* NewsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF99264ABBBE006B2B17 /* NewsConstants.swift */; };
+		3179BF9D264B0E2C006B2B17 /* NewsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF9C264B0E2C006B2B17 /* NewsPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3179BF94264AB9AE006B2B17 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
 		3179BF97264ABA95006B2B17 /* NewsWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebServiceTests.swift; sourceTree = "<group>"; };
 		3179BF99264ABBBE006B2B17 /* NewsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsConstants.swift; sourceTree = "<group>"; };
+		3179BF9C264B0E2C006B2B17 /* NewsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		3179BF8C264AB54D006B2B17 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				3179BF9B264B0DB5006B2B17 /* Presenter */,
 				3179BF96264ABA6D006B2B17 /* Network */,
 				3179BF8D264AB571006B2B17 /* Mocks */,
 			);
@@ -234,6 +237,14 @@
 				3179BF97264ABA95006B2B17 /* NewsWebServiceTests.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		3179BF9B264B0DB5006B2B17 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF9C264B0E2C006B2B17 /* NewsPresenterTests.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +396,7 @@
 			files = (
 				3179BF5F2649D9F5006B2B17 /* TickiOSCodeChallengeTests.swift in Sources */,
 				3179BF95264AB9AE006B2B17 /* MockSignupPresenter.swift in Sources */,
+				3179BF9D264B0E2C006B2B17 /* NewsPresenterTests.swift in Sources */,
 				3179BF8F264AB5AF006B2B17 /* MockURLProtocol.swift in Sources */,
 				3179BF93264AB93D006B2B17 /* MockNewsViewDelegate.swift in Sources */,
 				3179BF91264AB63C006B2B17 /* MockNewsWebService.swift in Sources */,

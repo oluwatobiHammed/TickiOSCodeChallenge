@@ -13,12 +13,12 @@ class MockNewsViewDelegate: NewsViewDelegateProtocol {
     
 
     var expectation: XCTestExpectation?
-    var successfulSignupCounter = 0
+    var successfulGetNewsCounter = 0
     var errorHandlerCounter = 0
     var newsError: NewsError?
     
     func successGetNews(response: NewsResponseModel) {
-        successfulSignupCounter += 1
+        successfulGetNewsCounter += 1
         expectation?.fulfill()
     }
     

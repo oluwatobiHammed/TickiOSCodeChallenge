@@ -25,7 +25,7 @@ class NewsWebServiceTests: XCTestCase {
         MockURLProtocol.error = nil
     }
 
-    func testSignupWebService_WhenReceivedDifferentJSONResponse_ErrorTookPlace() {
+    func testNewsWebService_WhenReceivedDifferentJSONResponse_ErrorTookPlace() {
         // Arrange
         let jsonString = "{\"path\":\"/users\", \"error\":\"Internal Server Error\"}"
         MockURLProtocol.stubResponseData =  jsonString.data(using: .utf8)
@@ -45,6 +45,24 @@ class NewsWebServiceTests: XCTestCase {
         self.wait(for: [expectation], timeout: 5)
     }
 
-  
+    func testNewsWebservice_WhenEmptyURLStringProvided_ReturnsError() {
+        // Arrange
+        let expectation = self.expectation(description: "An empty request URL string expectation")
+        
+        sut = NewsWebService(urlString: "")
+        
+        // Act
+        sut.getNews( methodFor: .GET) { (newsResponseModel, error) in
+            
+            // Assert
+            XCTAssertEqual(error, NewsError.invalidRequestURLString, "The getNews() method did not return an expected error for an invalidRequestURLString error")
+            XCTAssertNil(newsResponseModel, "When an invalidRequestURLString takes place, the response model must be nil")
+            expectation.fulfill()
+        }
+        
+        self.wait(for: [expectation], timeout: 2)
+    }
+    
+    
 
 }
