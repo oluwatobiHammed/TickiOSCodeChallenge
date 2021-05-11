@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3179BF4D2649D9F3006B2B17 /* TickiOSCodeChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF4C2649D9F3006B2B17 /* TickiOSCodeChallengeApp.swift */; };
+		3179BF4F2649D9F3006B2B17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF4E2649D9F3006B2B17 /* ContentView.swift */; };
+		3179BF512649D9F5006B2B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3179BF502649D9F5006B2B17 /* Assets.xcassets */; };
+		3179BF542649D9F5006B2B17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3179BF532649D9F5006B2B17 /* Preview Assets.xcassets */; };
+		3179BF5F2649D9F5006B2B17 /* TickiOSCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF5E2649D9F5006B2B17 /* TickiOSCodeChallengeTests.swift */; };
+		3179BF6A2649D9F5006B2B17 /* TickiOSCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF692649D9F5006B2B17 /* TickiOSCodeChallengeUITests.swift */; };
+		3179BF792649E3DE006B2B17 /* NewsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF782649E3DE006B2B17 /* NewsWebService.swift */; };
+		3179BF7C2649E416006B2B17 /* NewsWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF7B2649E416006B2B17 /* NewsWebServiceProtocol.swift */; };
+		3179BF7F2649E498006B2B17 /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF7E2649E498006B2B17 /* HttpMethods.swift */; };
+		3179BF822649E53A006B2B17 /* NewsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF812649E53A006B2B17 /* NewsResponseModel.swift */; };
+		3179BF842649E726006B2B17 /* NewsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF832649E726006B2B17 /* NewsError.swift */; };
+		3179BF862649E962006B2B17 /* NewsViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF852649E962006B2B17 /* NewsViewDelegateProtocol.swift */; };
+		3179BF882649E9AD006B2B17 /* NewsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF872649E9AD006B2B17 /* NewsPresenterProtocol.swift */; };
+		3179BF8B2649EA53006B2B17 /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF8A2649EA53006B2B17 /* NewsPresenter.swift */; };
+		3179BF8F264AB5AF006B2B17 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF8E264AB5AF006B2B17 /* MockURLProtocol.swift */; };
+		3179BF91264AB63C006B2B17 /* MockNewsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF90264AB63C006B2B17 /* MockNewsWebService.swift */; };
+		3179BF93264AB93D006B2B17 /* MockNewsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF92264AB93D006B2B17 /* MockNewsViewDelegate.swift */; };
+		3179BF95264AB9AE006B2B17 /* MockSignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF94264AB9AE006B2B17 /* MockSignupPresenter.swift */; };
+		3179BF98264ABA95006B2B17 /* NewsWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF97264ABA95006B2B17 /* NewsWebServiceTests.swift */; };
+		3179BF9A264ABBBE006B2B17 /* NewsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3179BF99264ABBBE006B2B17 /* NewsConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3179BF5B2649D9F5006B2B17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3179BF412649D9F3006B2B17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3179BF482649D9F3006B2B17;
+			remoteInfo = TickiOSCodeChallenge;
+		};
+		3179BF662649D9F5006B2B17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3179BF412649D9F3006B2B17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3179BF482649D9F3006B2B17;
+			remoteInfo = TickiOSCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3179BF492649D9F3006B2B17 /* TickiOSCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TickiOSCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3179BF4C2649D9F3006B2B17 /* TickiOSCodeChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickiOSCodeChallengeApp.swift; sourceTree = "<group>"; };
+		3179BF4E2649D9F3006B2B17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3179BF502649D9F5006B2B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3179BF532649D9F5006B2B17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3179BF552649D9F5006B2B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3179BF5A2649D9F5006B2B17 /* TickiOSCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickiOSCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3179BF5E2649D9F5006B2B17 /* TickiOSCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickiOSCodeChallengeTests.swift; sourceTree = "<group>"; };
+		3179BF602649D9F5006B2B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3179BF652649D9F5006B2B17 /* TickiOSCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickiOSCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3179BF692649D9F5006B2B17 /* TickiOSCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickiOSCodeChallengeUITests.swift; sourceTree = "<group>"; };
+		3179BF6B2649D9F5006B2B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3179BF782649E3DE006B2B17 /* NewsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebService.swift; sourceTree = "<group>"; };
+		3179BF7B2649E416006B2B17 /* NewsWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebServiceProtocol.swift; sourceTree = "<group>"; };
+		3179BF7E2649E498006B2B17 /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
+		3179BF812649E53A006B2B17 /* NewsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponseModel.swift; sourceTree = "<group>"; };
+		3179BF832649E726006B2B17 /* NewsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsError.swift; sourceTree = "<group>"; };
+		3179BF852649E962006B2B17 /* NewsViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewDelegateProtocol.swift; sourceTree = "<group>"; };
+		3179BF872649E9AD006B2B17 /* NewsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenterProtocol.swift; sourceTree = "<group>"; };
+		3179BF8A2649EA53006B2B17 /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
+		3179BF8E264AB5AF006B2B17 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		3179BF90264AB63C006B2B17 /* MockNewsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsWebService.swift; sourceTree = "<group>"; };
+		3179BF92264AB93D006B2B17 /* MockNewsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsViewDelegate.swift; sourceTree = "<group>"; };
+		3179BF94264AB9AE006B2B17 /* MockSignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupPresenter.swift; sourceTree = "<group>"; };
+		3179BF97264ABA95006B2B17 /* NewsWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWebServiceTests.swift; sourceTree = "<group>"; };
+		3179BF99264ABBBE006B2B17 /* NewsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsConstants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3179BF462649D9F3006B2B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3179BF572649D9F5006B2B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3179BF622649D9F5006B2B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3179BF402649D9F3006B2B17 = {
+			isa = PBXGroup;
+			children = (
+				3179BF4B2649D9F3006B2B17 /* TickiOSCodeChallenge */,
+				3179BF5D2649D9F5006B2B17 /* TickiOSCodeChallengeTests */,
+				3179BF682649D9F5006B2B17 /* TickiOSCodeChallengeUITests */,
+				3179BF4A2649D9F3006B2B17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3179BF4A2649D9F3006B2B17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF492649D9F3006B2B17 /* TickiOSCodeChallenge.app */,
+				3179BF5A2649D9F5006B2B17 /* TickiOSCodeChallengeTests.xctest */,
+				3179BF652649D9F5006B2B17 /* TickiOSCodeChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3179BF4B2649D9F3006B2B17 /* TickiOSCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF892649EA27006B2B17 /* Presenters */,
+				3179BF802649E516006B2B17 /* Models */,
+				3179BF7D2649E485006B2B17 /* HelperMethod */,
+				3179BF7A2649E3ED006B2B17 /* Protocols */,
+				3179BF772649E3AC006B2B17 /* Network */,
+				3179BF4C2649D9F3006B2B17 /* TickiOSCodeChallengeApp.swift */,
+				3179BF4E2649D9F3006B2B17 /* ContentView.swift */,
+				3179BF502649D9F5006B2B17 /* Assets.xcassets */,
+				3179BF552649D9F5006B2B17 /* Info.plist */,
+				3179BF522649D9F5006B2B17 /* Preview Content */,
+			);
+			path = TickiOSCodeChallenge;
+			sourceTree = "<group>";
+		};
+		3179BF522649D9F5006B2B17 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF532649D9F5006B2B17 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3179BF5D2649D9F5006B2B17 /* TickiOSCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF8C264AB54D006B2B17 /* News */,
+				3179BF5E2649D9F5006B2B17 /* TickiOSCodeChallengeTests.swift */,
+				3179BF602649D9F5006B2B17 /* Info.plist */,
+			);
+			path = TickiOSCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		3179BF682649D9F5006B2B17 /* TickiOSCodeChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF692649D9F5006B2B17 /* TickiOSCodeChallengeUITests.swift */,
+				3179BF6B2649D9F5006B2B17 /* Info.plist */,
+			);
+			path = TickiOSCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		3179BF772649E3AC006B2B17 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF782649E3DE006B2B17 /* NewsWebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3179BF7A2649E3ED006B2B17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF7B2649E416006B2B17 /* NewsWebServiceProtocol.swift */,
+				3179BF852649E962006B2B17 /* NewsViewDelegateProtocol.swift */,
+				3179BF872649E9AD006B2B17 /* NewsPresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3179BF7D2649E485006B2B17 /* HelperMethod */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF7E2649E498006B2B17 /* HttpMethods.swift */,
+			);
+			path = HelperMethod;
+			sourceTree = "<group>";
+		};
+		3179BF802649E516006B2B17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF812649E53A006B2B17 /* NewsResponseModel.swift */,
+				3179BF832649E726006B2B17 /* NewsError.swift */,
+				3179BF99264ABBBE006B2B17 /* NewsConstants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3179BF892649EA27006B2B17 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF8A2649EA53006B2B17 /* NewsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		3179BF8C264AB54D006B2B17 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF96264ABA6D006B2B17 /* Network */,
+				3179BF8D264AB571006B2B17 /* Mocks */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		3179BF8D264AB571006B2B17 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF8E264AB5AF006B2B17 /* MockURLProtocol.swift */,
+				3179BF90264AB63C006B2B17 /* MockNewsWebService.swift */,
+				3179BF92264AB93D006B2B17 /* MockNewsViewDelegate.swift */,
+				3179BF94264AB9AE006B2B17 /* MockSignupPresenter.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3179BF96264ABA6D006B2B17 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3179BF97264ABA95006B2B17 /* NewsWebServiceTests.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3179BF482649D9F3006B2B17 /* TickiOSCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3179BF6E2649D9F5006B2B17 /* Build configuration list for PBXNativeTarget "TickiOSCodeChallenge" */;
+			buildPhases = (
+				3179BF452649D9F3006B2B17 /* Sources */,
+				3179BF462649D9F3006B2B17 /* Frameworks */,
+				3179BF472649D9F3006B2B17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TickiOSCodeChallenge;
+			productName = TickiOSCodeChallenge;
+			productReference = 3179BF492649D9F3006B2B17 /* TickiOSCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3179BF592649D9F5006B2B17 /* TickiOSCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3179BF712649D9F5006B2B17 /* Build configuration list for PBXNativeTarget "TickiOSCodeChallengeTests" */;
+			buildPhases = (
+				3179BF562649D9F5006B2B17 /* Sources */,
+				3179BF572649D9F5006B2B17 /* Frameworks */,
+				3179BF582649D9F5006B2B17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3179BF5C2649D9F5006B2B17 /* PBXTargetDependency */,
+			);
+			name = TickiOSCodeChallengeTests;
+			productName = TickiOSCodeChallengeTests;
+			productReference = 3179BF5A2649D9F5006B2B17 /* TickiOSCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3179BF642649D9F5006B2B17 /* TickiOSCodeChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3179BF742649D9F5006B2B17 /* Build configuration list for PBXNativeTarget "TickiOSCodeChallengeUITests" */;
+			buildPhases = (
+				3179BF612649D9F5006B2B17 /* Sources */,
+				3179BF622649D9F5006B2B17 /* Frameworks */,
+				3179BF632649D9F5006B2B17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3179BF672649D9F5006B2B17 /* PBXTargetDependency */,
+			);
+			name = TickiOSCodeChallengeUITests;
+			productName = TickiOSCodeChallengeUITests;
+			productReference = 3179BF652649D9F5006B2B17 /* TickiOSCodeChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3179BF412649D9F3006B2B17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					3179BF482649D9F3006B2B17 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3179BF592649D9F5006B2B17 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3179BF482649D9F3006B2B17;
+					};
+					3179BF642649D9F5006B2B17 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 3179BF482649D9F3006B2B17;
+					};
+				};
+			};
+			buildConfigurationList = 3179BF442649D9F3006B2B17 /* Build configuration list for PBXProject "TickiOSCodeChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3179BF402649D9F3006B2B17;
+			productRefGroup = 3179BF4A2649D9F3006B2B17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3179BF482649D9F3006B2B17 /* TickiOSCodeChallenge */,
+				3179BF592649D9F5006B2B17 /* TickiOSCodeChallengeTests */,
+				3179BF642649D9F5006B2B17 /* TickiOSCodeChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3179BF472649D9F3006B2B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3179BF542649D9F5006B2B17 /* Preview Assets.xcassets in Resources */,
+				3179BF512649D9F5006B2B17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3179BF582649D9F5006B2B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3179BF632649D9F5006B2B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3179BF452649D9F3006B2B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3179BF7F2649E498006B2B17 /* HttpMethods.swift in Sources */,
+				3179BF822649E53A006B2B17 /* NewsResponseModel.swift in Sources */,
+				3179BF4F2649D9F3006B2B17 /* ContentView.swift in Sources */,
+				3179BF882649E9AD006B2B17 /* NewsPresenterProtocol.swift in Sources */,
+				3179BF7C2649E416006B2B17 /* NewsWebServiceProtocol.swift in Sources */,
+				3179BF9A264ABBBE006B2B17 /* NewsConstants.swift in Sources */,
+				3179BF842649E726006B2B17 /* NewsError.swift in Sources */,
+				3179BF4D2649D9F3006B2B17 /* TickiOSCodeChallengeApp.swift in Sources */,
+				3179BF8B2649EA53006B2B17 /* NewsPresenter.swift in Sources */,
+				3179BF792649E3DE006B2B17 /* NewsWebService.swift in Sources */,
+				3179BF862649E962006B2B17 /* NewsViewDelegateProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3179BF562649D9F5006B2B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3179BF5F2649D9F5006B2B17 /* TickiOSCodeChallengeTests.swift in Sources */,
+				3179BF95264AB9AE006B2B17 /* MockSignupPresenter.swift in Sources */,
+				3179BF8F264AB5AF006B2B17 /* MockURLProtocol.swift in Sources */,
+				3179BF93264AB93D006B2B17 /* MockNewsViewDelegate.swift in Sources */,
+				3179BF91264AB63C006B2B17 /* MockNewsWebService.swift in Sources */,
+				3179BF98264ABA95006B2B17 /* NewsWebServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3179BF612649D9F5006B2B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3179BF6A2649D9F5006B2B17 /* TickiOSCodeChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3179BF5C2649D9F5006B2B17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3179BF482649D9F3006B2B17 /* TickiOSCodeChallenge */;
+			targetProxy = 3179BF5B2649D9F5006B2B17 /* PBXContainerItemProxy */;
+		};
+		3179BF672649D9F5006B2B17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3179BF482649D9F3006B2B17 /* TickiOSCodeChallenge */;
+			targetProxy = 3179BF662649D9F5006B2B17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3179BF6C2649D9F5006B2B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3179BF6D2649D9F5006B2B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3179BF6F2649D9F5006B2B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TickiOSCodeChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TickiOSCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oluwaAppCreator.TickiOSCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3179BF702649D9F5006B2B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TickiOSCodeChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TickiOSCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oluwaAppCreator.TickiOSCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3179BF722649D9F5006B2B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				INFOPLIST_FILE = TickiOSCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oluwaAppCreator.TickiOSCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickiOSCodeChallenge.app/TickiOSCodeChallenge";
+			};
+			name = Debug;
+		};
+		3179BF732649D9F5006B2B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				INFOPLIST_FILE = TickiOSCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oluwaAppCreator.TickiOSCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TickiOSCodeChallenge.app/TickiOSCodeChallenge";
+			};
+			name = Release;
+		};
+		3179BF752649D9F5006B2B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				INFOPLIST_FILE = TickiOSCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oluwaAppCreator.TickiOSCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TickiOSCodeChallenge;
+			};
+			name = Debug;
+		};
+		3179BF762649D9F5006B2B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3K5BT8EBBM;
+				INFOPLIST_FILE = TickiOSCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = oluwaAppCreator.TickiOSCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TickiOSCodeChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3179BF442649D9F3006B2B17 /* Build configuration list for PBXProject "TickiOSCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3179BF6C2649D9F5006B2B17 /* Debug */,
+				3179BF6D2649D9F5006B2B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3179BF6E2649D9F5006B2B17 /* Build configuration list for PBXNativeTarget "TickiOSCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3179BF6F2649D9F5006B2B17 /* Debug */,
+				3179BF702649D9F5006B2B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3179BF712649D9F5006B2B17 /* Build configuration list for PBXNativeTarget "TickiOSCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3179BF722649D9F5006B2B17 /* Debug */,
+				3179BF732649D9F5006B2B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3179BF742649D9F5006B2B17 /* Build configuration list for PBXNativeTarget "TickiOSCodeChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3179BF752649D9F5006B2B17 /* Debug */,
+				3179BF762649D9F5006B2B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3179BF412649D9F3006B2B17 /* Project object */;
+}
